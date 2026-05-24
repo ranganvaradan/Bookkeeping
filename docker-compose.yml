@@ -43,11 +43,11 @@ services:
       - "8085:8085"
     environment:
       SERVER_PORT: 8085
-      # Inside Docker network, containers use service names and default ports
-      DB_URL: jdbc:postgresql://postgres:5432/billiontech
+      # Hardcoded for Docker networking — containers use container names, not localhost
+      DB_URL: jdbc:postgresql://bt-postgres:5432/billiontech
       DB_USERNAME: bt_user
       DB_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD is required}
-      REDIS_URL: redis://redis:6379
+      REDIS_URL: redis://bt-redis:6379
       FRONTEND_URL: ${FRONTEND_URL:-http://localhost:3010}
       JWT_SECRET: ${JWT_SECRET:-}
       QBO_CLIENT_ID: ${QBO_CLIENT_ID:-}
