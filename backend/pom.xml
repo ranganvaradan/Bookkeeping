@@ -91,6 +91,13 @@
             <version>6.3.0</version>
         </dependency>
 
+        <!-- Intuit QuickBooks Online Data Services SDK -->
+        <dependency>
+            <groupId>com.intuit.quickbooks-online</groupId>
+            <artifactId>ipp-v3-java-devkit</artifactId>
+            <version>6.3.0</version>
+        </dependency>
+
         <!-- Validation -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
