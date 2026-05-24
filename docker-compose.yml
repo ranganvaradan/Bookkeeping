@@ -71,8 +71,8 @@ services:
     ports:
       - "3010:3010"
     environment:
-      # Inside Docker, the frontend proxies /api to the backend via service name
-      VITE_API_BASE_URL: http://bt-backend:8085
+      # Browser-side API calls must use a host-reachable URL, not the Docker service name
+      VITE_API_BASE_URL: http://localhost:8085
     depends_on:
       - backend
 
