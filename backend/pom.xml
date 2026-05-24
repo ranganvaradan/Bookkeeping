@@ -84,6 +84,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- Intuit QuickBooks Online OAuth2 SDK -->
+        <dependency>
+            <groupId>com.intuit.quickbooks-online</groupId>
+            <artifactId>oauth2-platform-api</artifactId>
+            <version>6.3.0</version>
+        </dependency>
+
         <!-- Validation -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
